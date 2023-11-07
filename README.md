@@ -1,1 +1,2 @@
-# Scope_LabVIEW
+# LabVTemplate
+LabView Program Template
