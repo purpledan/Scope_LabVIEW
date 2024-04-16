@@ -10,36 +10,6 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="AHCommands" Type="Folder">
-			<Item Name="CMD_Folder" Type="Folder">
-				<Item Name="AH_CmdAVG.vi" Type="VI" URL="../Sources/AH_CmdAVG.vi"/>
-				<Item Name="AH_CmdCABLE.vi" Type="VI" URL="../Sources/AH_CmdCABLE.vi"/>
-				<Item Name="AH_CmdFORMAT.vi" Type="VI" URL="../Sources/AH_CmdFORMAT.vi"/>
-				<Item Name="AH_CmdSRE.vi" Type="VI" URL="../Sources/AH_CmdSRE.vi"/>
-				<Item Name="AH_CmdTRK.vi" Type="VI" URL="../Sources/AH_CmdTRK.vi"/>
-				<Item Name="AH_CmdUNIT.vi" Type="VI" URL="../Sources/AH_CmdUNIT.vi"/>
-				<Item Name="AH_CmdVOLT.vi" Type="VI" URL="../Sources/AH_CmdVOLT.vi"/>
-			</Item>
-			<Item Name="CMD_Helpers" Type="Folder">
-				<Item Name="AH_EvalSTB.vi" Type="VI" URL="../Sources/AH_EvalSTB.vi"/>
-				<Item Name="AH_GetSTB.vi" Type="VI" URL="../Sources/AH_GetSTB.vi"/>
-				<Item Name="AH_PreCMD.vi" Type="VI" URL="../Sources/AH_PreCMD.vi"/>
-				<Item Name="AH_PreCMD.vim" Type="VI" URL="../Sources/AH_PreCMD.vim"/>
-				<Item Name="AH_SND.vi" Type="VI" URL="../Sources/AH_SND.vi"/>
-				<Item Name="AH_SRQHalt.vi" Type="VI" URL="../Sources/AH_SRQHalt.vi"/>
-				<Item Name="Commands.ctl" Type="VI" URL="../Sources/Commands.ctl"/>
-			</Item>
-			<Item Name="READ_Helpers" Type="Folder">
-				<Item Name="AH_GetMSG.vi" Type="VI" URL="../Sources/AH_GetMSG.vi"/>
-				<Item Name="AH_ParseMSG.vi" Type="VI" URL="../Sources/AH_ParseMSG.vi"/>
-			</Item>
-			<Item Name="Setup_Blocks" Type="Folder">
-				<Item Name="AH_PreSET.vi" Type="VI" URL="../Sources/AH_PreSET.vi"/>
-			</Item>
-			<Item Name="AH_CMD.vi" Type="VI" URL="../Sources/AH_CMD.vi"/>
-			<Item Name="AH_MEAS.vi" Type="VI" URL="../Sources/AH_MEAS.vi"/>
-			<Item Name="AH_TRG.vi" Type="VI" URL="../Sources/AH_TRG.vi"/>
-		</Item>
 		<Item Name="Clusters" Type="Folder">
 			<Item Name="Config_Cluster.ctl" Type="VI" URL="../Sources/Config_Cluster.ctl"/>
 			<Item Name="Data_Cluster.ctl" Type="VI" URL="../Sources/Data_Cluster.ctl"/>
@@ -58,7 +28,11 @@
 			<Item Name="LCR_InsertMeasurements.vi" Type="VI" URL="../Sources/LCR_InsertMeasurements.vi"/>
 			<Item Name="LCR_Logfile.vi" Type="VI" URL="../Sources/LCR_Logfile.vi"/>
 		</Item>
+		<Item Name="GenCommands" Type="Folder">
+			<Item Name="GEN_OPEN.vi" Type="VI" URL="../Sources/GEN_OPEN.vi"/>
+		</Item>
 		<Item Name="General" Type="Folder">
+			<Item Name="ARB_GetGlobals.vi" Type="VI" URL="../Sources/ARB_GetGlobals.vi"/>
 			<Item Name="GEN_CulArray.vi" Type="VI" URL="../Sources/GEN_CulArray.vi"/>
 			<Item Name="GEN_DQ.vim" Type="VI" URL="../GEN_DQ.vim"/>
 			<Item Name="GEN_ResetTimer.vi" Type="VI" URL="../Sources/GEN_ResetTimer.vi"/>
@@ -81,13 +55,18 @@
 			<Item Name="Untitled 4.vi" Type="VI" URL="../Sources/Untitled 4.vi"/>
 		</Item>
 		<Item Name="ScopeCommands" Type="Folder">
+			<Item Name="SCOPE_CONFIG.vi" Type="VI" URL="../Sources/SCOPE_CONFIG.vi"/>
+			<Item Name="SCOPE_GetSettings.vi" Type="VI" URL="../Sources/SCOPE_GetSettings.vi"/>
+			<Item Name="SCOPE_Measure.vi" Type="VI" URL="../Sources/SCOPE_Measure.vi"/>
 			<Item Name="SCOPE_OPEN.vi" Type="VI" URL="../Sources/SCOPE_OPEN.vi"/>
+			<Item Name="SCOPE_SetSettings.vi" Type="VI" URL="../Sources/SCOPE_SetSettings.vi"/>
 		</Item>
-		<Item Name="AH_ERRtoSTR.vi" Type="VI" URL="../Sources/AH_ERRtoSTR.vi"/>
+		<Item Name="VNACommands" Type="Folder">
+			<Item Name="VNA_OPEN.vi" Type="VI" URL="../Sources/VNA_OPEN.vi"/>
+		</Item>
 		<Item Name="AH_FileCheck.vi" Type="VI" URL="../Sources/AH_FileCheck.vi"/>
-		<Item Name="AH_GetGlobals.vi" Type="VI" URL="../Sources/AH_GetGlobals.vi"/>
-		<Item Name="AH_msgTEST.vi" Type="VI" URL="../Sources/AH_msgTEST.vi"/>
 		<Item Name="AH_OpenFile.vi" Type="VI" URL="../Sources/AH_OpenFile.vi"/>
+		<Item Name="GEN_SetSettings.vi" Type="VI" URL="../Sources/GEN_SetSettings.vi"/>
 		<Item Name="Measurement_Cluster.ctl" Type="VI" URL="../Sources/Measurement_Cluster.ctl"/>
 		<Item Name="Mode_Enum.ctl" Type="VI" URL="../Sources/Mode_Enum.ctl"/>
 		<Item Name="Plotting-Axis.ctl" Type="VI" URL="../Sources/Plotting-Axis.ctl"/>
@@ -105,11 +84,14 @@
 				<Item Name="hmo Clear Status.vi" Type="VI" URL="/&lt;instrlib&gt;/hmo/Utility/hmo Clear Status.vi"/>
 				<Item Name="hmo Close.vi" Type="VI" URL="/&lt;instrlib&gt;/hmo/hmo Close.vi"/>
 				<Item Name="hmo Configure Channel Vertical Scale.vi" Type="VI" URL="/&lt;instrlib&gt;/hmo/Configuration/Channel/hmo Configure Channel Vertical Scale.vi"/>
+				<Item Name="hmo Configure Channel.vi" Type="VI" URL="/&lt;instrlib&gt;/hmo/Configuration/Channel/hmo Configure Channel.vi"/>
 				<Item Name="hmo Configure Time Base.vi" Type="VI" URL="/&lt;instrlib&gt;/hmo/Configuration/Acquisition/hmo Configure Time Base.vi"/>
 				<Item Name="hmo Fetch Main Waveform Measurement.vi" Type="VI" URL="/&lt;instrlib&gt;/hmo/Waveform Acquisition/Low-level Acquisition/hmo Fetch Main Waveform Measurement.vi"/>
+				<Item Name="hmo Fetch Waveform.vi" Type="VI" URL="/&lt;instrlib&gt;/hmo/Waveform Acquisition/Low-level Acquisition/hmo Fetch Waveform.vi"/>
 				<Item Name="hmo Get OPC Timeout.vi" Type="VI" URL="/&lt;instrlib&gt;/hmo/Utility/hmo Get OPC Timeout.vi"/>
 				<Item Name="hmo Initialize with Options.vi" Type="VI" URL="/&lt;instrlib&gt;/hmo/hmo Initialize with Options.vi"/>
 				<Item Name="hmo Initialize.vi" Type="VI" URL="/&lt;instrlib&gt;/hmo/hmo Initialize.vi"/>
+				<Item Name="hmo Initiate Acquisition.vi" Type="VI" URL="/&lt;instrlib&gt;/hmo/Waveform Acquisition/Low-level Acquisition/hmo Initiate Acquisition.vi"/>
 				<Item Name="hmo Instrument Options.vi" Type="VI" URL="/&lt;instrlib&gt;/hmo/Utility/hmo Instrument Options.vi"/>
 				<Item Name="hmo Query Acquisition Time.vi" Type="VI" URL="/&lt;instrlib&gt;/hmo/Configuration/Acquisition/hmo Query Acquisition Time.vi"/>
 				<Item Name="hmo Query Divisions.vi" Type="VI" URL="/&lt;instrlib&gt;/hmo/Configuration/Acquisition/hmo Query Divisions.vi"/>
@@ -117,7 +99,10 @@
 				<Item Name="hmo Query ViReal64.vi" Type="VI" URL="/&lt;instrlib&gt;/hmo/Utility/Instrument IO/hmo Query ViReal64.vi"/>
 				<Item Name="hmo Query ViString.vi" Type="VI" URL="/&lt;instrlib&gt;/hmo/Utility/Instrument IO/hmo Query ViString.vi"/>
 				<Item Name="hmo Read Main Waveform Measurement.vi" Type="VI" URL="/&lt;instrlib&gt;/hmo/Waveform Acquisition/hmo Read Main Waveform Measurement.vi"/>
+				<Item Name="hmo Read Trace Data.vi" Type="VI" URL="/&lt;instrlib&gt;/hmo/_utility/hmo Read Trace Data.vi"/>
+				<Item Name="hmo Read Waveform.vi" Type="VI" URL="/&lt;instrlib&gt;/hmo/Waveform Acquisition/hmo Read Waveform.vi"/>
 				<Item Name="hmo Reset.vi" Type="VI" URL="/&lt;instrlib&gt;/hmo/Utility/hmo Reset.vi"/>
+				<Item Name="hmo Send Software Trigger.vi" Type="VI" URL="/&lt;instrlib&gt;/hmo/Waveform Acquisition/Low-level Acquisition/hmo Send Software Trigger.vi"/>
 				<Item Name="hmo Set OPC Timeout.vi" Type="VI" URL="/&lt;instrlib&gt;/hmo/Utility/hmo Set OPC Timeout.vi"/>
 				<Item Name="hmo Write Command.vi" Type="VI" URL="/&lt;instrlib&gt;/hmo/Utility/Instrument IO/hmo Write Command.vi"/>
 				<Item Name="hmo_core_global.vi" Type="VI" URL="/&lt;instrlib&gt;/hmo/_utility/hmo_core_global.vi"/>
@@ -126,6 +111,7 @@
 				<Item Name="hmo_noQuotedString_ReadCallback.vi" Type="VI" URL="/&lt;instrlib&gt;/hmo/_utility/callbacks/hmo_noQuotedString_ReadCallback.vi"/>
 				<Item Name="hmo_noQuotedString_WriteCallback.vi" Type="VI" URL="/&lt;instrlib&gt;/hmo/_utility/callbacks/hmo_noQuotedString_WriteCallback.vi"/>
 				<Item Name="hmo_rsidr_core.lvlib" Type="Library" URL="/&lt;instrlib&gt;/hmo/_utility/rsidr_core.llb/hmo_rsidr_core.lvlib"/>
+				<Item Name="SDG X Series.lvlib" Type="Library" URL="/&lt;instrlib&gt;/SDG X Series/SDG X Series.lvlib"/>
 			</Item>
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="subhmo_core_attribute_express.vi" Type="VI" URL="/&lt;userlib&gt;/_express/hmo/hmo_core_attribute_expressSource.llb/subhmo_core_attribute_express.vi"/>
@@ -158,8 +144,12 @@
 				<Item Name="Longest Line Length in Pixels.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Longest Line Length in Pixels.vi"/>
 				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
 				<Item Name="LVRectTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
+				<Item Name="NI_AAL_SigProc.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AAL_SigProc.lvlib"/>
+				<Item Name="NI_AALPro.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALPro.lvlib"/>
 				<Item Name="NI_FileType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/lvfile.llb/NI_FileType.lvlib"/>
 				<Item Name="NI_LVConfig.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/config.llb/NI_LVConfig.lvlib"/>
+				<Item Name="NI_MABase.lvlib" Type="Library" URL="/&lt;vilib&gt;/measure/NI_MABase.lvlib"/>
+				<Item Name="NI_MAPro.lvlib" Type="Library" URL="/&lt;vilib&gt;/measure/NI_MAPro.lvlib"/>
 				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
 				<Item Name="Not Found Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Not Found Dialog.vi"/>
 				<Item Name="Search and Replace Pattern.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Search and Replace Pattern.vi"/>
@@ -173,9 +163,9 @@
 				<Item Name="Three Button Dialog CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog CORE.vi"/>
 				<Item Name="Three Button Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog.vi"/>
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
-				<Item Name="Wait for RQS.vi" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/Wait for RQS.vi"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
+			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
